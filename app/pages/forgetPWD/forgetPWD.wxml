@@ -1,0 +1,51 @@
+<view class="weui-cells weui-cells_after-title">
+ <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_switch">
+            <view class="weui-cell__bd">选择账号类型：{{isStu ? '学生':'教师'}}</view>
+              <view class="weui-cell__ft">
+                  <switch checked bindchange='schecked'/>
+              </view>
+          </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+          <view class="weui-label">学/工号</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input bindblur='input_id' class="weui-input" placeholder="学/工号"/>
+      </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+          <view class="weui-label">重置密码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input bindblur='input_pass' class="weui-input" placeholder="密码"/>
+      </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input  {{showWarn ? 'weui-cell_warn' : ''}}">
+          <view class="weui-cell__hd">
+            <view class="weui-label">邮箱号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" bindinput='input_mail' placeholder="请输入邮箱号"/>
+          </view>
+          <view class="weui-cell__ft">
+            <icon type="{{icontp}}" size="23" color="#E64340"></icon>
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <view class="weui-label">验证码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" bindblur='input_code' placeholder="验证码" />
+        </view>
+        <view class="weui-cell__ft">
+          <button class="weui-vcode-btn" disabled='{{canBtn}}' bindtap='clickYZM'>{{showTick}}</button>
+        </view>
+      </view>
+  </view>
+  <button class="weui-btn" type="primary" bindtap='btnclick'>提交</button>
+</view>

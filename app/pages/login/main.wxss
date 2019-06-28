@@ -1,0 +1,102 @@
+.main {
+    height: 100%;
+}
+.user {
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    box-sizing: border-box;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(45deg, #2980B9, #6DD5FA, #FFFFFF);
+    /* background-image: linear-gradient(30deg, #C6FFDD, #FBD786,#F7797D); */
+    transition: 0.3s;
+}
+/*图片*/
+.image1 {
+    width: 280rpx;
+    height: 280rpx;
+    display: block;
+    margin: auto;
+    margin-top: 130rpx;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+.btn {
+    position: absolute;
+    width: 100%;
+    bottom: 150rpx;
+}
+/*
+中间格式
+*/
+.inputField {
+    bottom: 200 rpx;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rpx;
+}
+/*
+输入框的style
+*/
+.user .btn .inputField input {
+    display: block;
+    margin: auto;
+    width: 450rpx;
+    height: 75rpx;
+    background: #fff;
+    color: #0086F1;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+    font-size: 25rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+/*
+输入框内字体的style
+*/
+.user .btn .inputField .inputClass {
+    color: #8BBBE1;
+    font-size: 30rpx;
+}
+/*
+选择老师或者学生的style
+*/
+.radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio {
+    font-size: 30rpx;
+    margin-right: 20rpx;
+}
+
+.onTap {
+    width: 450rpx;
+    display: block;
+    margin: 20rpx auto 0;
+    background: #0086F1;
+    border: none;
+    color: #fff;
+}
+
+.forget_pass{
+  border-bottom: 1px rgb(12, 9, 238) solid;
+  font-size: 12px;
+  width: auto;
+}
+
+.forgetPWD{
+  width: 100%;
+  padding-left: 75%;
+}

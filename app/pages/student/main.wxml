@@ -1,0 +1,142 @@
+<view class='index-contier'>
+  <view class="index-center">
+    <view class="logo">
+      <image src='/static/images/pj.png' class="userinfo" id="userinfo1"></image>
+    </view>
+  </view>
+</view>
+
+<block wx:if="{{myinfo.isSTU}}">
+
+  <view class='inform'>
+    <view class="item-box">
+
+      <view class="items">
+
+        <view class="item">
+          <view class="inner txt">
+            <image class="item-icon" mode="widthFix" src="/static/images/realName.png"></image>
+            <i> 姓名</i>
+            <span class="item-data">
+              <i class="rankpace"> {{myinfo.name}}</i>
+            </span>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="inner txt">
+            <image class="item-icon" mode="widthFix" src="/static/images/num.png"></image>
+            <i> 学号</i>
+            <span class="item-data">
+              <i class="rankpace">{{myinfo.id}}</i>
+            </span>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="inner txt">
+            <image class="item-icon" mode="widthFix" src="/static/images/class.png"></image>
+            <i> 班级</i>
+            <span class="item-data">
+              {{myinfo._class}}
+            </span>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="inner txt">
+            <image class="item-icon" mode="widthFix" src="/static/images/sex.png"></image>
+            <i> 性别</i>
+            <span class="item-data">
+              <i class="rankpace">{{myinfo.sex}}</i>
+            </span>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="inner txt" bindtap='resetpwd'>
+            <image class="item-icon" mode="widthFix" src="/static/images/changePass.png"></image>
+            <text decode="{{true}}">修改密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>>>> </text>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="inner txt" bindtap='exit'>
+            <image class="item-icon" mode="widthFix" src="/static/images/exit.png"></image>
+            <text decode="{{true}}">退出&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>>>> </text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+</block>
+
+<block wx:else>
+  <view class='inform'>
+    <view class="item-box">
+      <view class="items">
+
+        <view class="item">
+          <view class="inner txt">
+            <image class="item-icon" mode="widthFix" src="/static/images/realName.png"></image>
+            <i> 姓名</i>
+            <span class="item-data">
+              <i class="rankpace"> {{myinfo.name}}</i>
+            </span>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="inner txt">
+            <image class="item-icon" mode="widthFix" src="/static/images/ghao.png"></image>
+            <i> 工号</i>
+            <span class="item-data">
+              <i class="rankpace">{{myinfo.id}}</i>
+            </span>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="inner txt">
+            <image class="item-icon" mode="widthFix" src="/static/images/zw.png"></image>
+            <i> 职位</i>
+            <span class="item-data">
+              {{myinfo.zw}}
+            </span>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="inner txt">
+            <image class="item-icon" mode="widthFix" src="/static/images/sex.png"></image>
+            <i> 性别</i>
+            <span class="item-data">
+              <i class="rankpace">{{myinfo.sex}}</i>
+            </span>
+          </view>
+        </view>
+
+
+        <view class="item">
+          <view class="inner txt" bindtap='resetpwd'>
+            <image class="item-icon" mode="widthFix" src="/static/images/changePass.png"></image>
+            <text decode="{{true}}">修改密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>>>> </text>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="inner txt" bindtap='exit'>
+            <image class="item-icon" mode="widthFix" src="/static/images/exit.png"></image>
+            <text decode="{{true}}">退出&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>>>> </text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+
+
+</block>

@@ -1,0 +1,20 @@
+<view class="main">
+    <view class="user">
+        <image class='image1' src="/static/images/title.png"></image>
+        <view class="btn">
+            <view class="inputField">
+                <input  type="text" bindblur="input_id" placeholder-class="inputClass" value="" data-type="number" placeholder="{{type[0].state?'请输入教师账号':'请输入学号'}}"/>
+                <input  type="password" bindblur="input_pass" placeholder-class="inputClass" value="" data-type="password" placeholder="请输入密码"/>
+            </view>
+            <radio-group class="radio-group" bindchange="loginType">
+                <label class="radio" wx:for="{{type}}" wx:key='key'>
+                    <radio value="{{index}}" color="#0086F1" checked="{{item.state}}"/>
+                    {{item.name}}
+                </label>                
+            </radio-group>
+            <view class="forgetPWD"><text class='forget_pass'  bindtap='go_forgetPWD'>忘记密码？</text></view>
+            <button class="onTap" bindtap='mlogin'>登录 </button>
+            <button class="onTap" bindtap='mregist'>注册 </button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,70 @@
+.index-contier {
+  width: 100%;
+  height: 450rpx;
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #eee;
+  background-image: url('http://img5.imgtn.bdimg.com/it/u=8685675,2171717858&fm=26&gp=0.jpg');
+}
+.index-center {
+  float: right;
+  width: 40%;
+  margin-top: 240rpx;
+  color: #000;
+}
+.logo {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+.inform {
+  padding: 0 6px;
+  font-size: 30rpx;
+}
+#userinfo1 {
+  width: 185rpx;
+  height: 185rpx;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+}
+view {
+  box-sizing: border-box;
+}
+.item-box {
+  width: 700rpx;
+  margin: 0 auto;
+}
+.items {
+  width: 100%;
+}
+.item {
+  position: relative;
+  border-top: 2rpx solid #eee;
+  height: 110rpx;
+  line-height: 120rpx;
+  overflow: hidden;
+}
+.inner.txt {
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
+  padding: 0 10rpx;
+  transition: left 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-icon {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+  margin-left: 6px;
+  border-radius: 50%;
+}
+.item-data {
+  margin-left: 15%;
+}

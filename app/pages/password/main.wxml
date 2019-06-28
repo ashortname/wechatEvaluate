@@ -1,0 +1,37 @@
+<view class="weui-toptips {{ishowWarn ? 'weui-toptips_warn' : '' }}">{{showContent}}</view>
+<view class='container'>
+  <form>
+    <view class='top'>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>旧密码：</view>
+          <view>
+            <input type='password' data-type='password' bindblur='inputOld' placeholder="请输入旧密码" maxlength='20'></input>
+          </view>
+        </view>
+      </view>
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>新密码：</view>
+          <view>
+            <input type='password' data-type='password' bindblur='inputNew' placeholder="请输入新密码" maxlength='20'></input>
+          </view>
+        </view>
+
+      </view>
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>确认密码：</view>
+          <view>
+            <input type='password' data-type='password' bindblur='inputConfirm' placeholder="请再次输入新密码" maxlength='20'></input>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='btn' bindtap='btnConfirm'>确定</view>
+
+  </form>
+</view>

@@ -1,0 +1,122 @@
+/* pages/teacher/teacher.wxss */ 
+.container{  
+  height: 100%;  
+  display: flex;  
+  flex-direction: column;   
+  align-items: center;   
+  justify-content: space-between;   
+  padding: 0 8rpx;    
+  box-sizing: border-box; 
+  /* background-color: #bdc3c7; */
+}  
+.header{
+  /* margin-top: 10px; */
+  padding-bottom: 10rpx;
+  height: 100%;  
+  display: flex;  
+  flex-direction: column;   
+  align-items: center;   
+  justify-content: space-between;   
+  box-sizing: border-box;
+  /* background-color: #bdc3c7; */
+}  
+.section{  
+  width: 100%;  
+  height: 100%;  
+  /* background-color: whitesmoke;    */
+  /* margin-top: 10px;   */
+}
+.section_{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.section1{
+  width: 100%;  
+  height: auto;  
+  /* border-bottom: solid 1px #999; */
+  border-radius: 12px;
+}  
+    
+ .photo{  
+  width: 120px;  
+  height: 200px;  
+  margin-left: 10px;  
+ }    
+.img{  
+  width: 80px;  
+  height: 80px;  
+  margin-top: 10px;   
+  margin-left: 10px;  
+}    
+.menu{  
+  margin-left: 140px;  
+  margin-top: -190px;  
+}  
+.name{  
+  color: darkcyan;  
+  font-size: 14px;  
+}  
+.course{  
+   font-size: 13px;  
+   color: #999;  
+   margin-top: 4px;   
+}  
+.btn{  
+  margin-left: 120px;  
+  margin-top: 15px;  
+  display: flex;  
+  flex-direction: row;  
+}  
+navigator{  
+  width: 50px;  
+  height: 25px;  
+  font-size: 12px;  
+  line-height: 25px;  
+  text-align: center;  
+  border: solid 1px rgba(14, 140, 224, 0.575);  
+  margin-left: 15px;  
+}
+/* 添加的意见框 */
+.mweui-cells__title {
+  margin-top: 5rpx;
+  margin-bottom: 0.3em;
+  color: rgb(8, 20, 18);
+  font-size: 16px;
+}
+.mweui-textarea {
+  display: block;
+  width: 100%;
+  height: 200rpx;
+  /* background-color: #d6e4e7;
+  border-radius: 0 0 12px 12px; */
+}
+
+.mweui-cell__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  background-color: #d6e4e7;
+  border-radius: 0 0 12px 12px;
+}
+.mweui-textarea-counter {
+  color: #f0f0f0;
+  text-align: right;
+}
+
+.msimpleSeg{
+  width: 100%;
+  font-size: 13px;  
+  color: #999;  
+  margin-top: 4px;
+  background-color: whitesmoke;
+}
+
+.bac_color_1{
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.bac_color_2{
+  background-color: #DDD6F3;
+  background-image: linear-gradient(19deg, #DDD6F3 0%, #FAACA8 100%);
+}

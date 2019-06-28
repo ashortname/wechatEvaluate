@@ -1,0 +1,73 @@
+<!--pages/teacher/teacher.wxml-->
+<view class="header" wx:if="{{isSTU}}">
+    <text>评教系统-学生端</text>
+  </view>
+  <view class="header" wx:else>
+    <text>评教系统-教师端</text>
+</view>
+<view class='container'>
+  <view class='section'>
+    <view>
+      <block wx:if="{{hasData && isSTU}}">
+        <!-- 学生显示的内容 -->
+        <view wx:for="{{pjdatas}}" wx:for-index="idx" class='section_'>
+          <view class="section1 {{(idx % 2) == 0 ? 'bac_color_1' : 'bac_color_2'}}">
+            <view class='photo'>
+              <image class='img' src='/static/images/book.png' mode="aspectFill"></image>
+            </view>
+            <view class='menu'>
+              <view class='name'>姓名：{{item.tname}}</view>
+              <view class='course'>任课：{{item.cname}}</view>
+              <view class='course'>分数：{{item.score}}</view>
+            </view>
+            <view class='btn' wx:if="{{item.chk}}">
+              <navigator open-type='navigate'>已评教</navigator>
+            </view>
+            <view class='btn' wx:else>
+              <navigator open-type='navigate' url='/pages/evaluationList/main?tid={{item.tid}}&cid={{item.cid}}'>评教</navigator>
+            </view>
+            <view class='course'>个人建议：</view>
+            <view class="mweui-cells mweui-cells_after-title">
+              <view class="mweui-cell">
+                <view class="mweui-cell__bd">                  
+                  <textarea class="mweui-textarea" placeholder-style='  color:rgb(0, 0, 0);' focus="{{focus}}" value="{{item.comment}}" />
+                </view>
+              </view>
+            </view>
+          </view>
+
+        </view>
+      </block>
+      <block wx:elif="{{hasData && !isSTU}}">
+        <!-- 教师显示的内容 -->
+        <view wx:for="{{pjdatas}}" wx:for-index="idx" class='section_'>
+          <view class="section1 {{(idx % 2) == 0 ? 'bac_color_1' : 'bac_color_2'}}">
+            <view class='photo'>
+              <image class='img' src='/static/images/book.png' mode="aspectFill"></image>
+            </view>
+            <view class='menu'>
+              <view class='name'>学号：{{item.sid}}</view>
+              <view class='course'>姓名：{{item.sname}}</view>
+              <view class='course'>课程名：{{item.cname}}</view>
+              <view class='course'>是否评教：{{item.chk ? '已评教':'未评教'}}</view>
+              <view class='course'>分数：{{item.score}}</view>
+            </view>
+            <view class='msimpleSeg'>个人建议：</view>
+            <view class="mweui-cells mweui-cells_after-title">
+              <view class="mweui-cell">
+                <view class="mweui-cell__bd"> 
+                  <textarea class="mweui-textarea" placeholder-style='  color:rgb(0, 0, 0);' focus="{{focus}}" value="{{item.comment}}" />
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='section1'>未获取到数据</view>
+      </block>
+    </view>
+
+
+  </view>
+</view>

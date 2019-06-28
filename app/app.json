@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/login/main",
+    "pages/addStudent/main",
+    "pages/addTeacher/main",
+    "pages/evaluate/main",
+    "pages/evaluationList/main",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/student/main",
+    "pages/teacher/main",
+    "pages/password/main",
+    "pages/forgetPWD/forgetPWD"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6699CC",
+    "navigationBarTitleText": "Simple评教",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/evaluate/main",
+        "text": "评教",
+        "iconPath": "static/images/pingj.png",
+        "selectedIconPath": "static/images/pingj.png"
+      },
+      {
+        "pagePath": "pages/student/main",
+        "text": "个人中心",
+        "iconPath": "static/images/personal.png",
+        "selectedIconPath": "static/images/personal.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 7000
+  }
+}

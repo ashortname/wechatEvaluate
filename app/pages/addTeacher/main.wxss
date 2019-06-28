@@ -1,0 +1,101 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.panel {
+  background: #fff;
+  padding: 25rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  transition: 0.2s;
+}
+.panel .panel_title {
+  color: #0086F1;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.panel:first-child {
+  margin-top: 0px;
+}
+.err {
+  background: #fb6155;
+  text-align: center;
+}
+.err .panel_title {
+  color: #fff;
+}
+.success {
+  background: #228e33;
+  text-align: center;
+}
+.success .panel_title {
+  color: #fff;
+}
+.onTap:active {
+  transform: scale(0.95);
+}
+page {
+  width: 100%;
+  height: 100%;
+}
+page .cont {
+  width: 100%;
+  height: 100%;
+  background: #f0f2f5;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+}
+page .cont .panel {
+  margin-top: 0px;
+}
+page .cont .panel .item {
+  display: flex;
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  border-bottom: 1px solid #f0f2f5;
+}
+page .cont .panel .item picker {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  opacity: 0;
+  left: 0;
+}
+page .cont .panel .item .valuePlaceholder {
+  color: #8BBBE1;
+}
+page .cont .panel .item .key {
+  color: #0086F1;
+  position: absolute;
+  left: 0;
+}
+page .cont .panel .item .value {
+  color: #8BBBE1;
+  margin-right: 20rpx;
+  text-align: right;
+}
+page .cont .panel .item image {
+  width: 30rpx;
+  height: 30rpx;
+}
+page .cont .panel .item .avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+page .cont .panel .item:last-child {
+  border: none;
+}
+page .cont .success {
+  margin-top: 20rpx;
+}

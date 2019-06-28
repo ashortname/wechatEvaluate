@@ -1,0 +1,75 @@
+<view class='page'>
+
+<view class="page__hd">
+  <text class="page__title">1、</text>
+  <text class="page__desc">该课程很有用，在课堂上学到了很多东西，对以后帮助很大。</text>
+  <view class="section section_gap">
+    <radio-group class="radio-group" bindchange="radioChange" data-iid='0'>
+      <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+        <text>{{item.value}}</text>
+      </radio>
+    </radio-group>
+  </view>
+</view>
+
+<view class="page__hd">
+  <text class="page__title">2、</text>
+  <text class="page__desc">该课程很好地激发了我地学习兴趣并调动了我的积极性。</text>
+  <view class="section section_gap">
+    <radio-group class="radio-group" bindchange="radioChange" data-iid='1'>
+      <radio class="radio"  wx:for="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+        <text>{{item.value}}</text>
+      </radio>
+    </radio-group>
+  </view>
+</view>
+
+<view class="page__hd">
+  <text class="page__title">3、</text>
+  <text class="page__desc">老师很好地组织学生听课，做实验，授课教师教导有方。</text>
+  <view class="section section_gap">
+    <radio-group class="radio-group" bindchange="radioChange" data-iid='2'>
+      <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+        <text>{{item.value}}</text>
+      </radio>
+    </radio-group>
+  </view>
+</view>
+
+<view class="page__hd">
+  <text class="page__title">4、</text>
+  <text class="page__desc">通过本课程，我掌握了课程重要的基础知识，同时形成了较完整课程框架与知识体系。</text>
+  <view class="section section_gap">
+    <radio-group class="radio-group" bindchange="radioChange" data-iid='3'>
+      <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+        <text>{{item.value}}</text>
+      </radio>
+    </radio-group>
+  </view>
+</view>
+
+<view class="page__hd">
+  <text class="page__title">5、</text>
+  <text class="page__desc">通过该课程，我学会了如何将知识应用于实践。</text>
+  <view class="section section_gap">
+    <radio-group class="radio-group" bindchange="radioChange" data-iid='4'>
+      <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+        <text>{{item.value}}</text>
+      </radio>
+    </radio-group>
+  </view>
+</view>
+  <view class="mweui-cells__title">个人意见：</view>
+  <view class="mweui-cells weui-cells_after-title">
+    <view class="mweui-cell">
+      <view class="mweui-cell__bd">
+        <textarea bindblur='inputComment' class="mweui-textarea" maxlength='50' placeholder="限50以内"  placeholder-style='  color:rgb(0, 0, 0);' focus="{{focus}}" />
+      </view>
+    </view>
+
+  </view>
+
+
+            <button class="mweui-btn" type="primary" plain="true" bindtap='btnCommit'>提交</button>
+
+  </view>

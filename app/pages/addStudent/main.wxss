@@ -1,0 +1,59 @@
+.cont {
+  width: 100%;
+  height: 100%;
+  background: #f0f2f5;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+}
+.panel {
+  background: #fff;
+  padding: 25rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  transition: 0.2s;
+}
+
+.item {
+  display: flex;
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  border-bottom: 1px solid #f0f2f5;
+}
+.key {
+  color: #0086F1;
+  position: absolute;
+  left: 0;
+}
+.value {
+  color: #8BBBE1;
+  margin-right: 20rpx;
+  text-align: right;
+}
+
+.panel:first-child {
+  margin-top: 0px;
+}
+.item:last-child {
+  border: none;
+}
+
+page .cont .success {
+  margin-top: 20rpx;
+}
+/*保存字体大小*/
+.panel_title {
+  font-size: 28rpx;
+}
+/*保存边框style*/
+.success {
+  background: #228e33;
+  text-align: center;
+}
+/*保存字体颜色*/
+.success .panel_title {
+  color: #fff;
+}

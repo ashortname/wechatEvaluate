@@ -1,0 +1,111 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.2",
+	"appid": "wx3cdb12793f07be3b",
+	"projectname": "pingjiaoxiaochengxu",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "addstudent",
+					"pathName": "pages/addStudent/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "addteacher",
+					"pathName": "pages/addTeacher/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "login",
+					"pathName": "pages/login/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "evaluationList",
+					"pathName": "pages/evaluationList/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "evalute",
+					"pathName": "pages/evaluate/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "student",
+					"pathName": "pages/student/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "teacher",
+					"pathName": "pages/teacher/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "password",
+					"pathName": "pages/password/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "forgetPWD",
+					"pathName": "pages/forgetPWD/forgetPWD",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}
